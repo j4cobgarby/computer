@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NM27C256Q150
+D 32K x 8 CMOS EPROM
+K eprom
+$ENDCMP
+#
+#End Doc Library

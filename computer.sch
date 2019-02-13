@@ -1,0 +1,621 @@
+EESchema Schematic File Version 4
+LIBS:computer-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CPU:Z80CPU U1
+U 1 1 5C5988C9
+P 4400 2850
+F 0 "U1" H 4700 4400 50  0000 C CNN
+F 1 "Z80CPU" H 4700 4300 50  0000 C CNN
+F 2 "" H 4400 3250 50  0001 C CNN
+F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 4400 3250 50  0001 C CNN
+	1    4400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:VCC #PWR01
+U 1 1 5C59BB92
+P 4400 1350
+F 0 "#PWR01" H 4400 1450 30  0001 C CNN
+F 1 "VCC" H 4403 1478 30  0000 C CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:GND #PWR02
+U 1 1 5C59BC65
+P 4400 4400
+F 0 "#PWR02" H 4400 4400 30  0001 C CNN
+F 1 "GND" H 4400 4330 30  0001 C CNN
+F 2 "" H 4400 4400 50  0001 C CNN
+F 3 "" H 4400 4400 50  0001 C CNN
+	1    4400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L chips:Z80_PIO U?
+U 1 1 5C5DAED4
+P 7400 1150
+F 0 "U?" H 7400 978 50  0000 C CNN
+F 1 "Z80_PIO" H 7400 887 50  0000 C CNN
+F 2 "" H 7400 1150 50  0001 C CNN
+F 3 "" H 7400 1150 50  0001 C CNN
+	1    7400 1150
+	1    0    0    -1  
+$EndComp
+Entry Bus Bus
+	5350 3350 5450 3250
+Entry Bus Bus
+	5350 3450 5450 3350
+Entry Bus Bus
+	5350 3550 5450 3450
+Entry Bus Bus
+	5350 3650 5450 3550
+Entry Bus Bus
+	5350 3750 5450 3650
+Entry Bus Bus
+	5350 3850 5450 3750
+Entry Bus Bus
+	5350 3950 5450 3850
+Entry Bus Bus
+	5350 4050 5450 3950
+Text Label 5350 3350 0    50   ~ 0
+D0
+Text Label 5350 3450 0    50   ~ 0
+D1
+Text Label 5350 3550 0    50   ~ 0
+D2
+Text Label 5350 3650 0    50   ~ 0
+D3
+Text Label 5350 3750 0    50   ~ 0
+D4
+Text Label 5350 3850 0    50   ~ 0
+D5
+Text Label 5350 3950 0    50   ~ 0
+D6
+Text Label 5350 4050 0    50   ~ 0
+D7
+Text Label 6900 1750 0    50   ~ 0
+D0
+Text Label 6900 1850 0    50   ~ 0
+D1
+Text Label 6900 1950 0    50   ~ 0
+D2
+Text Label 6900 2050 0    50   ~ 0
+D3
+Text Label 6900 2150 0    50   ~ 0
+D4
+Text Label 6900 2250 0    50   ~ 0
+D5
+Text Label 6900 2350 0    50   ~ 0
+D6
+Text Label 6900 2450 0    50   ~ 0
+D7
+Text Label 5100 1650 0    50   ~ 0
+CPU_A0
+Text Label 5100 1750 0    50   ~ 0
+CPU_A1
+Text Label 6900 2650 2    50   ~ 0
+CPU_A0
+Text Label 6900 2750 2    50   ~ 0
+CPU_A1
+$Comp
+L components:VCC #PWR?
+U 1 1 5C641CDE
+P 7400 1500
+F 0 "#PWR?" H 7400 1600 30  0001 C CNN
+F 1 "VCC" H 7403 1628 30  0000 C CNN
+F 2 "" H 7400 1500 50  0001 C CNN
+F 3 "" H 7400 1500 50  0001 C CNN
+	1    7400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:GND #PWR?
+U 1 1 5C641DB5
+P 7400 4250
+F 0 "#PWR?" H 7400 4250 30  0001 C CNN
+F 1 "GND" H 7400 4180 30  0001 C CNN
+F 2 "" H 7400 4250 50  0001 C CNN
+F 3 "" H 7400 4250 50  0001 C CNN
+	1    7400 4250
+	1    0    0    -1  
+$EndComp
+Text Label 3700 3650 2    50   ~ 0
+CPU_IORQ
+Text Label 6900 3150 2    50   ~ 0
+CPU_IORQ
+Text Label 6900 2950 2    50   ~ 0
+CPU_IORQ
+Text Label 3700 2650 2    50   ~ 0
+CPU_M1
+Text Label 6900 3050 2    50   ~ 0
+CPU_M1
+Text Label 3700 3350 2    50   ~ 0
+CPU_RD
+Text Label 6900 3250 2    50   ~ 0
+CPU_RD
+Text Label 3700 2350 2    50   ~ 0
+CPU_INT
+Text Label 6900 3650 2    50   ~ 0
+CPU_INT
+Entry Bus Bus
+	6800 1850 6900 1750
+Entry Bus Bus
+	6800 1950 6900 1850
+Entry Bus Bus
+	6800 2050 6900 1950
+Entry Bus Bus
+	6800 2150 6900 2050
+Entry Bus Bus
+	6800 2250 6900 2150
+Entry Bus Bus
+	6800 2350 6900 2250
+Entry Bus Bus
+	6800 2450 6900 2350
+Entry Bus Bus
+	6800 2550 6900 2450
+Text Label 5100 1850 0    50   ~ 0
+CPU_A2
+Text Label 5100 1950 0    50   ~ 0
+CPU_A3
+Text Label 5100 2050 0    50   ~ 0
+CPU_A4
+Text Label 5100 2150 0    50   ~ 0
+CPU_A5
+Text Label 5100 2250 0    50   ~ 0
+CPU_A6
+Text Label 5100 2350 0    50   ~ 0
+CPU_A7
+Text Label 5100 2450 0    50   ~ 0
+CPU_A8
+Text Label 5100 2550 0    50   ~ 0
+CPU_A9
+Text Label 5100 2650 0    50   ~ 0
+CPU_A10
+Text Label 5100 2750 0    50   ~ 0
+CPU_A11
+Text Label 5100 2850 0    50   ~ 0
+CPU_A12
+Text Label 5100 2950 0    50   ~ 0
+CPU_A13
+Text Label 5100 3050 0    50   ~ 0
+CPU_A14
+Text Label 5100 3150 0    50   ~ 0
+CPU_A15
+Wire Bus Line
+	5450 2550 6800 2550
+Wire Wire Line
+	5100 3350 5350 3350
+$Comp
+L chips:Z80_PIO U?
+U 1 1 5C6429BB
+P 7400 4300
+F 0 "U?" H 7400 4128 50  0000 C CNN
+F 1 "Z80_PIO" H 7400 4037 50  0000 C CNN
+F 2 "" H 7400 4300 50  0001 C CNN
+F 3 "" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	1    0    0    -1  
+$EndComp
+Text Label 6900 4900 0    50   ~ 0
+D0
+Text Label 6900 5000 0    50   ~ 0
+D1
+Text Label 6900 5100 0    50   ~ 0
+D2
+Text Label 6900 5200 0    50   ~ 0
+D3
+Text Label 6900 5300 0    50   ~ 0
+D4
+Text Label 6900 5400 0    50   ~ 0
+D5
+Text Label 6900 5500 0    50   ~ 0
+D6
+Text Label 6900 5600 0    50   ~ 0
+D7
+Text Label 6900 5800 2    50   ~ 0
+CPU_A2
+Text Label 6900 5900 2    50   ~ 0
+CPU_A3
+$Comp
+L components:VCC #PWR?
+U 1 1 5C6429CB
+P 7400 4650
+F 0 "#PWR?" H 7400 4750 30  0001 C CNN
+F 1 "VCC" H 7403 4778 30  0000 C CNN
+F 2 "" H 7400 4650 50  0001 C CNN
+F 3 "" H 7400 4650 50  0001 C CNN
+	1    7400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:GND #PWR?
+U 1 1 5C6429D1
+P 7400 7400
+F 0 "#PWR?" H 7400 7400 30  0001 C CNN
+F 1 "GND" H 7400 7330 30  0001 C CNN
+F 2 "" H 7400 7400 50  0001 C CNN
+F 3 "" H 7400 7400 50  0001 C CNN
+	1    7400 7400
+	1    0    0    -1  
+$EndComp
+Text Label 6900 6300 2    50   ~ 0
+CPU_IORQ
+Text Label 6900 6100 2    50   ~ 0
+CPU_IORQ
+Text Label 6900 6200 2    50   ~ 0
+CPU_M1
+Text Label 6900 6400 2    50   ~ 0
+CPU_RD
+Text Label 6900 6800 2    50   ~ 0
+CPU_INT
+Entry Bus Bus
+	6800 5000 6900 4900
+Entry Bus Bus
+	6800 5100 6900 5000
+Entry Bus Bus
+	6800 5200 6900 5100
+Entry Bus Bus
+	6800 5300 6900 5200
+Entry Bus Bus
+	6800 5400 6900 5300
+Entry Bus Bus
+	6800 5500 6900 5400
+Entry Bus Bus
+	6800 5600 6900 5500
+Entry Bus Bus
+	6800 5700 6900 5600
+Wire Wire Line
+	5100 3450 5350 3450
+Wire Wire Line
+	5100 3550 5350 3550
+Wire Wire Line
+	5100 3650 5350 3650
+Wire Wire Line
+	5100 3750 5350 3750
+Wire Wire Line
+	5100 3850 5350 3850
+Wire Wire Line
+	5100 3950 5350 3950
+Wire Wire Line
+	5100 4050 5350 4050
+Wire Bus Line
+	5450 5000 6800 5000
+$Comp
+L 74xx:74LS00 U?
+U 1 1 5C643635
+P 1550 2050
+F 0 "U?" H 1550 2375 50  0000 C CNN
+F 1 "74LS00" H 1550 2284 50  0000 C CNN
+F 2 "" H 1550 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 1550 2050 50  0001 C CNN
+	1    1550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C643766
+P 1550 2500
+F 0 "R?" V 1343 2500 50  0000 C CNN
+F 1 "330" V 1434 2500 50  0000 C CNN
+F 2 "" V 1480 2500 50  0001 C CNN
+F 3 "~" H 1550 2500 50  0001 C CNN
+	1    1550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6437ED
+P 2100 2050
+F 0 "C?" V 1848 2050 50  0000 C CNN
+F 1 "100n" V 1939 2050 50  0000 C CNN
+F 2 "" H 2138 1900 50  0001 C CNN
+F 3 "~" H 2100 2050 50  0001 C CNN
+	1    2100 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5C643923
+P 2000 2750
+F 0 "Y?" H 2000 3018 50  0000 C CNN
+F 1 "4MHz" H 2000 2927 50  0000 C CNN
+F 2 "" H 2000 2750 50  0001 C CNN
+F 3 "~" H 2000 2750 50  0001 C CNN
+	1    2000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2500 1900 2500
+Wire Wire Line
+	1900 2500 1900 2050
+Wire Wire Line
+	1900 2050 1850 2050
+Wire Wire Line
+	1900 2050 1950 2050
+Connection ~ 1900 2050
+$Comp
+L Device:C C?
+U 1 1 5C643FB3
+P 1250 3100
+F 0 "C?" H 1365 3146 50  0000 L CNN
+F 1 "120p" H 1365 3055 50  0000 L CNN
+F 2 "" H 1288 2950 50  0001 C CNN
+F 3 "~" H 1250 3100 50  0001 C CNN
+	1    1250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2950 1250 2750
+Wire Wire Line
+	1400 2500 1250 2500
+Connection ~ 1250 2500
+Wire Wire Line
+	1250 2500 1250 2150
+Wire Wire Line
+	1850 2750 1250 2750
+Connection ~ 1250 2750
+Wire Wire Line
+	1250 2750 1250 2500
+$Comp
+L 74xx:74LS00 U?
+U 2 1 5C644AD7
+P 2600 1950
+F 0 "U?" H 2600 2275 50  0000 C CNN
+F 1 "74LS00" H 2600 2184 50  0000 C CNN
+F 2 "" H 2600 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2600 1950 50  0001 C CNN
+	2    2600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2050 2250 2050
+$Comp
+L Device:R R?
+U 1 1 5C644F1D
+P 2600 2500
+F 0 "R?" V 2393 2500 50  0000 C CNN
+F 1 "330" V 2484 2500 50  0000 C CNN
+F 2 "" V 2530 2500 50  0001 C CNN
+F 3 "~" H 2600 2500 50  0001 C CNN
+	1    2600 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2500 2300 2500
+Wire Wire Line
+	2300 2500 2300 2050
+Connection ~ 2300 2050
+Wire Wire Line
+	2750 2500 2950 2500
+Wire Wire Line
+	2950 2500 2950 2050
+Wire Wire Line
+	2950 1950 2900 1950
+$Comp
+L 74xx:74LS00 U?
+U 3 1 5C6458FC
+P 3400 1950
+F 0 "U?" H 3400 2275 50  0000 C CNN
+F 1 "74LS00" H 3400 2184 50  0000 C CNN
+F 2 "" H 3400 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3400 1950 50  0001 C CNN
+	3    3400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2050 2950 2050
+Connection ~ 2950 2050
+Wire Wire Line
+	2950 2050 2950 1950
+Wire Wire Line
+	2150 2750 2950 2750
+Wire Wire Line
+	2950 2750 2950 2500
+Connection ~ 2950 2500
+Wire Wire Line
+	3100 1850 2950 1850
+Wire Wire Line
+	2950 1450 2300 1450
+Wire Wire Line
+	2300 1450 2300 1850
+Wire Wire Line
+	2300 1450 1250 1450
+Wire Wire Line
+	1250 1450 1250 1950
+Connection ~ 2300 1450
+Wire Wire Line
+	2950 1450 2950 1850
+$Comp
+L components:VCC #PWR?
+U 1 1 5C6480F6
+P 1250 1450
+F 0 "#PWR?" H 1250 1550 30  0001 C CNN
+F 1 "VCC" H 1253 1578 30  0000 C CNN
+F 2 "" H 1250 1450 50  0001 C CNN
+F 3 "" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 1450
+$Comp
+L components:GND #PWR?
+U 1 1 5C648178
+P 1250 3300
+F 0 "#PWR?" H 1250 3300 30  0001 C CNN
+F 1 "GND" H 1250 3230 30  0001 C CNN
+F 2 "" H 1250 3300 50  0001 C CNN
+F 3 "" H 1250 3300 50  0001 C CNN
+	1    1250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 5 1 5C6482CA
+P 2400 3250
+F 0 "U?" V 2033 3250 50  0000 C CNN
+F 1 "74LS00" V 2124 3250 50  0000 C CNN
+F 2 "" H 2400 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2400 3250 50  0001 C CNN
+	5    2400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L components:VCC #PWR?
+U 1 1 5C6483E4
+P 2900 3250
+F 0 "#PWR?" H 2900 3350 30  0001 C CNN
+F 1 "VCC" H 2903 3378 30  0000 C CNN
+F 2 "" H 2900 3250 50  0001 C CNN
+F 3 "" H 2900 3250 50  0001 C CNN
+	1    2900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:GND #PWR?
+U 1 1 5C648438
+P 1900 3300
+F 0 "#PWR?" H 1900 3300 30  0001 C CNN
+F 1 "GND" H 1900 3230 30  0001 C CNN
+F 2 "" H 1900 3300 50  0001 C CNN
+F 3 "" H 1900 3300 50  0001 C CNN
+	1    1900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L chips:NM27C256Q150 U?
+U 1 1 5C64B58A
+P 4900 5050
+F 0 "U?" H 4875 5328 50  0000 C CNN
+F 1 "NM27C256Q150" H 4875 5237 50  0000 C CNN
+F 2 "" H 4800 5350 50  0001 C CNN
+F 3 "" H 4800 5350 50  0001 C CNN
+	1    4900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:VCC #PWR?
+U 1 1 5C64D71D
+P 4900 4950
+F 0 "#PWR?" H 4900 5050 30  0001 C CNN
+F 1 "VCC" H 4903 5078 30  0000 C CNN
+F 2 "" H 4900 4950 50  0001 C CNN
+F 3 "" H 4900 4950 50  0001 C CNN
+	1    4900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L components:GND #PWR?
+U 1 1 5C64D7A5
+P 4900 6950
+F 0 "#PWR?" H 4900 6950 30  0001 C CNN
+F 1 "GND" H 4900 6880 30  0001 C CNN
+F 2 "" H 4900 6950 50  0001 C CNN
+F 3 "" H 4900 6950 50  0001 C CNN
+	1    4900 6950
+	1    0    0    -1  
+$EndComp
+Text Label 4500 5250 2    50   ~ 0
+CPU_A0
+Text Label 4500 5350 2    50   ~ 0
+CPU_A1
+Text Label 4500 5450 2    50   ~ 0
+CPU_A2
+Text Label 4500 5550 2    50   ~ 0
+CPU_A3
+Text Label 4500 5650 2    50   ~ 0
+CPU_A4
+Text Label 4500 5750 2    50   ~ 0
+CPU_A5
+Text Label 4500 5850 2    50   ~ 0
+CPU_A6
+Text Label 4500 5950 2    50   ~ 0
+CPU_A7
+Text Label 4500 6050 2    50   ~ 0
+CPU_A8
+Text Label 4500 6150 2    50   ~ 0
+CPU_A9
+Text Label 4500 6250 2    50   ~ 0
+CPU_A10
+Text Label 4500 6350 2    50   ~ 0
+CPU_A11
+Text Label 4500 6450 2    50   ~ 0
+CPU_A12
+Text Label 4500 6550 2    50   ~ 0
+CPU_A13
+Text Label 4500 6650 2    50   ~ 0
+CPU_A14
+Text Label 5250 5150 0    50   ~ 0
+D0
+Text Label 5250 5250 0    50   ~ 0
+D1
+Text Label 5250 5350 0    50   ~ 0
+D2
+Text Label 5250 5450 0    50   ~ 0
+D3
+Text Label 5250 5550 0    50   ~ 0
+D4
+Text Label 5250 5650 0    50   ~ 0
+D5
+Text Label 5250 5750 0    50   ~ 0
+D6
+Text Label 5250 5850 0    50   ~ 0
+D7
+Entry Bus Bus
+	5350 5150 5450 5050
+Entry Bus Bus
+	5350 5250 5450 5150
+Entry Bus Bus
+	5350 5350 5450 5250
+Entry Bus Bus
+	5350 5450 5450 5350
+Entry Bus Bus
+	5350 5550 5450 5450
+Entry Bus Bus
+	5350 5650 5450 5550
+Entry Bus Bus
+	5350 5750 5450 5650
+Entry Bus Bus
+	5350 5850 5450 5750
+Wire Wire Line
+	5350 5150 5250 5150
+Wire Wire Line
+	5350 5250 5250 5250
+Wire Wire Line
+	5350 5350 5250 5350
+Wire Wire Line
+	5350 5450 5250 5450
+Wire Wire Line
+	5350 5550 5250 5550
+Wire Wire Line
+	5350 5650 5250 5650
+Wire Wire Line
+	5350 5750 5250 5750
+Wire Wire Line
+	5350 5850 5250 5850
+Wire Bus Line
+	6800 1850 6800 2550
+Wire Bus Line
+	6800 5000 6800 5700
+Wire Bus Line
+	5450 2550 5450 5000
+Wire Bus Line
+	5450 5000 5450 5750
+Connection ~ 5450 5000
+$EndSCHEMATC
