@@ -15,607 +15,1251 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CPU:Z80CPU U1
+L CPU:Z80CPU U3
 U 1 1 5C5988C9
-P 4400 2850
-F 0 "U1" H 4700 4400 50  0000 C CNN
-F 1 "Z80CPU" H 4700 4300 50  0000 C CNN
-F 2 "" H 4400 3250 50  0001 C CNN
-F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 4400 3250 50  0001 C CNN
-	1    4400 2850
+P 5300 3400
+F 0 "U3" H 5600 4950 50  0000 C CNN
+F 1 "Z80CPU" H 5600 4850 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 5300 3800 50  0001 C CNN
+F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 5300 3800 50  0001 C CNN
+	1    5300 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L components:VCC #PWR01
+L computer-rescue:VCC-components #PWR09
 U 1 1 5C59BB92
-P 4400 1350
-F 0 "#PWR01" H 4400 1450 30  0001 C CNN
-F 1 "VCC" H 4403 1478 30  0000 C CNN
-F 2 "" H 4400 1350 50  0001 C CNN
-F 3 "" H 4400 1350 50  0001 C CNN
-	1    4400 1350
+P 5300 1900
+F 0 "#PWR09" H 5300 2000 30  0001 C CNN
+F 1 "VCC" H 5303 2028 30  0000 C CNN
+F 2 "" H 5300 1900 50  0001 C CNN
+F 3 "" H 5300 1900 50  0001 C CNN
+	1    5300 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L components:GND #PWR02
+L computer-rescue:GND-components #PWR010
 U 1 1 5C59BC65
-P 4400 4400
-F 0 "#PWR02" H 4400 4400 30  0001 C CNN
-F 1 "GND" H 4400 4330 30  0001 C CNN
-F 2 "" H 4400 4400 50  0001 C CNN
-F 3 "" H 4400 4400 50  0001 C CNN
-	1    4400 4400
+P 5300 4950
+F 0 "#PWR010" H 5300 4950 30  0001 C CNN
+F 1 "GND" H 5300 4880 30  0001 C CNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "" H 5300 4950 50  0001 C CNN
+	1    5300 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L chips:Z80_PIO U?
+L computer-rescue:Z80_PIO-chips U5
 U 1 1 5C5DAED4
-P 7400 1150
-F 0 "U?" H 7400 978 50  0000 C CNN
-F 1 "Z80_PIO" H 7400 887 50  0000 C CNN
-F 2 "" H 7400 1150 50  0001 C CNN
-F 3 "" H 7400 1150 50  0001 C CNN
-	1    7400 1150
+P 8300 1700
+F 0 "U5" H 8300 1528 50  0000 C CNN
+F 1 "Z80_PIO" H 8300 1437 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 8300 1700 50  0001 C CNN
+F 3 "" H 8300 1700 50  0001 C CNN
+	1    8300 1700
 	1    0    0    -1  
 $EndComp
-Entry Bus Bus
-	5350 3350 5450 3250
-Entry Bus Bus
-	5350 3450 5450 3350
-Entry Bus Bus
-	5350 3550 5450 3450
-Entry Bus Bus
-	5350 3650 5450 3550
-Entry Bus Bus
-	5350 3750 5450 3650
-Entry Bus Bus
-	5350 3850 5450 3750
-Entry Bus Bus
-	5350 3950 5450 3850
-Entry Bus Bus
-	5350 4050 5450 3950
-Text Label 5350 3350 0    50   ~ 0
+Text Label 7800 2300 2    50   ~ 0
 D0
-Text Label 5350 3450 0    50   ~ 0
+Text Label 7800 2400 2    50   ~ 0
 D1
-Text Label 5350 3550 0    50   ~ 0
+Text Label 7800 2500 2    50   ~ 0
 D2
-Text Label 5350 3650 0    50   ~ 0
+Text Label 7800 2600 2    50   ~ 0
 D3
-Text Label 5350 3750 0    50   ~ 0
+Text Label 7800 2700 2    50   ~ 0
 D4
-Text Label 5350 3850 0    50   ~ 0
+Text Label 7800 2800 2    50   ~ 0
 D5
-Text Label 5350 3950 0    50   ~ 0
+Text Label 7800 2900 2    50   ~ 0
 D6
-Text Label 5350 4050 0    50   ~ 0
+Text Label 7800 3000 2    50   ~ 0
 D7
-Text Label 6900 1750 0    50   ~ 0
-D0
-Text Label 6900 1850 0    50   ~ 0
-D1
-Text Label 6900 1950 0    50   ~ 0
-D2
-Text Label 6900 2050 0    50   ~ 0
-D3
-Text Label 6900 2150 0    50   ~ 0
-D4
-Text Label 6900 2250 0    50   ~ 0
-D5
-Text Label 6900 2350 0    50   ~ 0
-D6
-Text Label 6900 2450 0    50   ~ 0
-D7
-Text Label 5100 1650 0    50   ~ 0
+Text Label 6000 2200 0    50   ~ 0
 CPU_A0
-Text Label 5100 1750 0    50   ~ 0
+Text Label 6000 2300 0    50   ~ 0
 CPU_A1
-Text Label 6900 2650 2    50   ~ 0
+Text Label 7800 3200 2    50   ~ 0
 CPU_A0
-Text Label 6900 2750 2    50   ~ 0
+Text Label 7800 3300 2    50   ~ 0
 CPU_A1
 $Comp
-L components:VCC #PWR?
+L computer-rescue:VCC-components #PWR013
 U 1 1 5C641CDE
-P 7400 1500
-F 0 "#PWR?" H 7400 1600 30  0001 C CNN
-F 1 "VCC" H 7403 1628 30  0000 C CNN
-F 2 "" H 7400 1500 50  0001 C CNN
-F 3 "" H 7400 1500 50  0001 C CNN
-	1    7400 1500
+P 8300 2050
+F 0 "#PWR013" H 8300 2150 30  0001 C CNN
+F 1 "VCC" H 8303 2178 30  0000 C CNN
+F 2 "" H 8300 2050 50  0001 C CNN
+F 3 "" H 8300 2050 50  0001 C CNN
+	1    8300 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L components:GND #PWR?
+L computer-rescue:GND-components #PWR014
 U 1 1 5C641DB5
-P 7400 4250
-F 0 "#PWR?" H 7400 4250 30  0001 C CNN
-F 1 "GND" H 7400 4180 30  0001 C CNN
-F 2 "" H 7400 4250 50  0001 C CNN
-F 3 "" H 7400 4250 50  0001 C CNN
-	1    7400 4250
+P 8300 4800
+F 0 "#PWR014" H 8300 4800 30  0001 C CNN
+F 1 "GND" H 8300 4730 30  0001 C CNN
+F 2 "" H 8300 4800 50  0001 C CNN
+F 3 "" H 8300 4800 50  0001 C CNN
+	1    8300 4800
 	1    0    0    -1  
 $EndComp
-Text Label 3700 3650 2    50   ~ 0
+Text Label 4600 4200 2    50   ~ 0
 CPU_IORQ
-Text Label 6900 3150 2    50   ~ 0
+Text Label 7800 3700 2    50   ~ 0
 CPU_IORQ
-Text Label 6900 2950 2    50   ~ 0
+Text Label 7800 3500 2    50   ~ 0
 CPU_IORQ
-Text Label 3700 2650 2    50   ~ 0
+Text Label 4600 3200 2    50   ~ 0
 CPU_M1
-Text Label 6900 3050 2    50   ~ 0
+Text Label 7800 3600 2    50   ~ 0
 CPU_M1
-Text Label 3700 3350 2    50   ~ 0
+Text Label 4600 3900 2    50   ~ 0
 CPU_RD
-Text Label 6900 3250 2    50   ~ 0
+Text Label 7800 3800 2    50   ~ 0
 CPU_RD
-Text Label 3700 2350 2    50   ~ 0
+Text Label 4600 2900 2    50   ~ 0
 CPU_INT
-Text Label 6900 3650 2    50   ~ 0
+Text Label 7800 4200 2    50   ~ 0
 CPU_INT
 Entry Bus Bus
-	6800 1850 6900 1750
+	7700 2400 7800 2300
 Entry Bus Bus
-	6800 1950 6900 1850
+	7700 2500 7800 2400
 Entry Bus Bus
-	6800 2050 6900 1950
+	7700 2600 7800 2500
 Entry Bus Bus
-	6800 2150 6900 2050
+	7700 2700 7800 2600
 Entry Bus Bus
-	6800 2250 6900 2150
+	7700 2800 7800 2700
 Entry Bus Bus
-	6800 2350 6900 2250
+	7700 2900 7800 2800
 Entry Bus Bus
-	6800 2450 6900 2350
+	7700 3000 7800 2900
 Entry Bus Bus
-	6800 2550 6900 2450
-Text Label 5100 1850 0    50   ~ 0
+	7700 3100 7800 3000
+Text Label 6000 2400 0    50   ~ 0
 CPU_A2
-Text Label 5100 1950 0    50   ~ 0
+Text Label 6000 2500 0    50   ~ 0
 CPU_A3
-Text Label 5100 2050 0    50   ~ 0
+Text Label 6000 2600 0    50   ~ 0
 CPU_A4
-Text Label 5100 2150 0    50   ~ 0
+Text Label 6000 2700 0    50   ~ 0
 CPU_A5
-Text Label 5100 2250 0    50   ~ 0
+Text Label 6000 2800 0    50   ~ 0
 CPU_A6
-Text Label 5100 2350 0    50   ~ 0
+Text Label 6000 2900 0    50   ~ 0
 CPU_A7
-Text Label 5100 2450 0    50   ~ 0
+Text Label 6000 3000 0    50   ~ 0
 CPU_A8
-Text Label 5100 2550 0    50   ~ 0
+Text Label 6000 3100 0    50   ~ 0
 CPU_A9
-Text Label 5100 2650 0    50   ~ 0
+Text Label 6000 3200 0    50   ~ 0
 CPU_A10
-Text Label 5100 2750 0    50   ~ 0
+Text Label 6000 3300 0    50   ~ 0
 CPU_A11
-Text Label 5100 2850 0    50   ~ 0
+Text Label 6000 3400 0    50   ~ 0
 CPU_A12
-Text Label 5100 2950 0    50   ~ 0
+Text Label 6000 3500 0    50   ~ 0
 CPU_A13
-Text Label 5100 3050 0    50   ~ 0
+Text Label 6000 3600 0    50   ~ 0
 CPU_A14
-Text Label 5100 3150 0    50   ~ 0
+Text Label 6000 3700 0    50   ~ 0
 CPU_A15
-Wire Bus Line
-	5450 2550 6800 2550
-Wire Wire Line
-	5100 3350 5350 3350
 $Comp
-L chips:Z80_PIO U?
+L computer-rescue:Z80_PIO-chips U6
 U 1 1 5C6429BB
-P 7400 4300
-F 0 "U?" H 7400 4128 50  0000 C CNN
-F 1 "Z80_PIO" H 7400 4037 50  0000 C CNN
-F 2 "" H 7400 4300 50  0001 C CNN
-F 3 "" H 7400 4300 50  0001 C CNN
-	1    7400 4300
+P 8300 4850
+F 0 "U6" H 8300 4678 50  0000 C CNN
+F 1 "Z80_PIO" H 8300 4587 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 8300 4850 50  0001 C CNN
+F 3 "" H 8300 4850 50  0001 C CNN
+	1    8300 4850
 	1    0    0    -1  
 $EndComp
-Text Label 6900 4900 0    50   ~ 0
+Text Label 7800 5450 2    50   ~ 0
 D0
-Text Label 6900 5000 0    50   ~ 0
+Text Label 7800 5550 2    50   ~ 0
 D1
-Text Label 6900 5100 0    50   ~ 0
+Text Label 7800 5650 2    50   ~ 0
 D2
-Text Label 6900 5200 0    50   ~ 0
+Text Label 7800 5750 2    50   ~ 0
 D3
-Text Label 6900 5300 0    50   ~ 0
+Text Label 7800 5850 2    50   ~ 0
 D4
-Text Label 6900 5400 0    50   ~ 0
+Text Label 7800 5950 2    50   ~ 0
 D5
-Text Label 6900 5500 0    50   ~ 0
+Text Label 7800 6050 2    50   ~ 0
 D6
-Text Label 6900 5600 0    50   ~ 0
+Text Label 7800 6150 2    50   ~ 0
 D7
-Text Label 6900 5800 2    50   ~ 0
+Text Label 7800 6350 2    50   ~ 0
 CPU_A2
-Text Label 6900 5900 2    50   ~ 0
+Text Label 7800 6450 2    50   ~ 0
 CPU_A3
 $Comp
-L components:VCC #PWR?
+L computer-rescue:VCC-components #PWR015
 U 1 1 5C6429CB
-P 7400 4650
-F 0 "#PWR?" H 7400 4750 30  0001 C CNN
-F 1 "VCC" H 7403 4778 30  0000 C CNN
-F 2 "" H 7400 4650 50  0001 C CNN
-F 3 "" H 7400 4650 50  0001 C CNN
-	1    7400 4650
+P 8300 5200
+F 0 "#PWR015" H 8300 5300 30  0001 C CNN
+F 1 "VCC" H 8303 5328 30  0000 C CNN
+F 2 "" H 8300 5200 50  0001 C CNN
+F 3 "" H 8300 5200 50  0001 C CNN
+	1    8300 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L components:GND #PWR?
+L computer-rescue:GND-components #PWR016
 U 1 1 5C6429D1
-P 7400 7400
-F 0 "#PWR?" H 7400 7400 30  0001 C CNN
-F 1 "GND" H 7400 7330 30  0001 C CNN
-F 2 "" H 7400 7400 50  0001 C CNN
-F 3 "" H 7400 7400 50  0001 C CNN
-	1    7400 7400
+P 8300 7950
+F 0 "#PWR016" H 8300 7950 30  0001 C CNN
+F 1 "GND" H 8300 7880 30  0001 C CNN
+F 2 "" H 8300 7950 50  0001 C CNN
+F 3 "" H 8300 7950 50  0001 C CNN
+	1    8300 7950
 	1    0    0    -1  
 $EndComp
-Text Label 6900 6300 2    50   ~ 0
+Text Label 7800 6850 2    50   ~ 0
 CPU_IORQ
-Text Label 6900 6100 2    50   ~ 0
+Text Label 7800 6650 2    50   ~ 0
 CPU_IORQ
-Text Label 6900 6200 2    50   ~ 0
+Text Label 7800 6750 2    50   ~ 0
 CPU_M1
-Text Label 6900 6400 2    50   ~ 0
+Text Label 7800 6950 2    50   ~ 0
 CPU_RD
-Text Label 6900 6800 2    50   ~ 0
+Text Label 7800 7350 2    50   ~ 0
+CPU_INT
+Wire Bus Line
+	6350 5550 6500 5550
+$Comp
+L 74xx:74LS00 U1
+U 1 1 5C643635
+P 1900 2600
+F 0 "U1" H 1900 2925 50  0000 C CNN
+F 1 "74LS00" H 1900 2834 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1900 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 1900 2600 50  0001 C CNN
+	1    1900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C643766
+P 1900 3050
+F 0 "R1" V 1693 3050 50  0000 C CNN
+F 1 "330" V 1784 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1830 3050 50  0001 C CNN
+F 3 "~" H 1900 3050 50  0001 C CNN
+	1    1900 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C6437ED
+P 2450 2600
+F 0 "C2" V 2198 2600 50  0000 C CNN
+F 1 "100n" V 2289 2600 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 2488 2450 50  0001 C CNN
+F 3 "~" H 2450 2600 50  0001 C CNN
+	1    2450 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5C643923
+P 2350 3300
+F 0 "Y1" H 2350 3568 50  0000 C CNN
+F 1 "4MHz" H 2350 3477 50  0000 C CNN
+F 2 "Crystal:Crystal_HC52-8mm_Horizontal_1EP_style2" H 2350 3300 50  0001 C CNN
+F 3 "~" H 2350 3300 50  0001 C CNN
+	1    2350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3050 2250 3050
+Wire Wire Line
+	2250 3050 2250 2600
+Wire Wire Line
+	2250 2600 2200 2600
+Wire Wire Line
+	2250 2600 2300 2600
+Connection ~ 2250 2600
+$Comp
+L Device:C C1
+U 1 1 5C643FB3
+P 1600 3650
+F 0 "C1" H 1715 3696 50  0000 L CNN
+F 1 "120p" H 1715 3605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 1638 3500 50  0001 C CNN
+F 3 "~" H 1600 3650 50  0001 C CNN
+	1    1600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3500 1600 3300
+Wire Wire Line
+	1750 3050 1600 3050
+Connection ~ 1600 3050
+Wire Wire Line
+	1600 3050 1600 2700
+Wire Wire Line
+	2200 3300 1600 3300
+Connection ~ 1600 3300
+Wire Wire Line
+	1600 3300 1600 3050
+$Comp
+L 74xx:74LS00 U1
+U 2 1 5C644AD7
+P 2950 2500
+F 0 "U1" H 2950 2825 50  0000 C CNN
+F 1 "74LS00" H 2950 2734 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2950 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2950 2500 50  0001 C CNN
+	2    2950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2600 2600 2600
+$Comp
+L Device:R R2
+U 1 1 5C644F1D
+P 2950 3050
+F 0 "R2" V 2743 3050 50  0000 C CNN
+F 1 "330" V 2834 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2880 3050 50  0001 C CNN
+F 3 "~" H 2950 3050 50  0001 C CNN
+	1    2950 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3050 2650 3050
+Wire Wire Line
+	2650 3050 2650 2600
+Connection ~ 2650 2600
+Wire Wire Line
+	3100 3050 3300 3050
+Wire Wire Line
+	3300 3050 3300 2600
+Wire Wire Line
+	3300 2500 3250 2500
+$Comp
+L 74xx:74LS00 U1
+U 3 1 5C6458FC
+P 3750 2500
+F 0 "U1" H 3750 2825 50  0000 C CNN
+F 1 "74LS00" H 3750 2734 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3750 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3750 2500 50  0001 C CNN
+	3    3750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2600 3300 2600
+Connection ~ 3300 2600
+Wire Wire Line
+	3300 2600 3300 2500
+Wire Wire Line
+	2500 3300 3300 3300
+Wire Wire Line
+	3300 3300 3300 3050
+Connection ~ 3300 3050
+Wire Wire Line
+	3450 2400 3300 2400
+Wire Wire Line
+	3300 2000 2650 2000
+Wire Wire Line
+	2650 2000 2650 2400
+Wire Wire Line
+	2650 2000 1600 2000
+Wire Wire Line
+	1600 2000 1600 2500
+Connection ~ 2650 2000
+Wire Wire Line
+	3300 2000 3300 2400
+$Comp
+L computer-rescue:VCC-components #PWR01
+U 1 1 5C6480F6
+P 1600 2000
+F 0 "#PWR01" H 1600 2100 30  0001 C CNN
+F 1 "VCC" H 1603 2128 30  0000 C CNN
+F 2 "" H 1600 2000 50  0001 C CNN
+F 3 "" H 1600 2000 50  0001 C CNN
+	1    1600 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 2000
+$Comp
+L computer-rescue:GND-components #PWR02
+U 1 1 5C648178
+P 1600 3850
+F 0 "#PWR02" H 1600 3850 30  0001 C CNN
+F 1 "GND" H 1600 3780 30  0001 C CNN
+F 2 "" H 1600 3850 50  0001 C CNN
+F 3 "" H 1600 3850 50  0001 C CNN
+	1    1600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U1
+U 5 1 5C6482CA
+P 2100 5100
+F 0 "U1" H 2400 5150 50  0000 C CNN
+F 1 "74LS00" H 2450 5050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2100 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2100 5100 50  0001 C CNN
+	5    2100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L chips2:AT28C256 U2
+U 1 1 5C646564
+P 4150 5300
+F 0 "U2" V 4150 3950 50  0000 C CNN
+F 1 "AT28C256" V 4150 4300 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 4150 5300 50  0001 C CNN
+F 3 "" H 4150 5300 50  0001 C CNN
+	1    4150 5300
+	1    0    0    -1  
+$EndComp
+Text Label 4500 5750 0    50   ~ 0
+D0
+Text Label 4500 5850 0    50   ~ 0
+D1
+Text Label 4500 5950 0    50   ~ 0
+D2
+Text Label 4500 6050 0    50   ~ 0
+D3
+Text Label 4500 6150 0    50   ~ 0
+D4
+Text Label 4500 6250 0    50   ~ 0
+D5
+Text Label 4500 6350 0    50   ~ 0
+D6
+Text Label 4500 6450 0    50   ~ 0
+D7
+Entry Bus Bus
+	4500 5750 4600 5650
+Entry Bus Bus
+	4500 5850 4600 5750
+Entry Bus Bus
+	4500 5950 4600 5850
+Entry Bus Bus
+	4500 6050 4600 5950
+Entry Bus Bus
+	4500 6150 4600 6050
+Entry Bus Bus
+	4500 6250 4600 6150
+Entry Bus Bus
+	4500 6350 4600 6250
+Entry Bus Bus
+	4500 6450 4600 6350
+Wire Bus Line
+	4600 5100 6350 5100
+Connection ~ 6350 5100
+Wire Bus Line
+	6350 5100 6350 5550
+$Comp
+L power:VCC #PWR07
+U 1 1 5C64816D
+P 4150 5550
+F 0 "#PWR07" H 4150 5400 50  0001 C CNN
+F 1 "VCC" H 4167 5723 50  0000 C CNN
+F 2 "" H 4150 5550 50  0001 C CNN
+F 3 "" H 4150 5550 50  0001 C CNN
+	1    4150 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5C6481F8
+P 4150 7350
+F 0 "#PWR08" H 4150 7100 50  0001 C CNN
+F 1 "GND" H 4155 7177 50  0000 C CNN
+F 2 "" H 4150 7350 50  0001 C CNN
+F 3 "" H 4150 7350 50  0001 C CNN
+	1    4150 7350
+	1    0    0    -1  
+$EndComp
+Text Label 3800 5750 2    50   ~ 0
+CPU_A0
+Text Label 3800 5850 2    50   ~ 0
+CPU_A1
+Text Label 3800 5950 2    50   ~ 0
+CPU_A2
+Text Label 3800 6050 2    50   ~ 0
+CPU_A3
+Text Label 3800 6150 2    50   ~ 0
+CPU_A4
+Text Label 3800 6250 2    50   ~ 0
+CPU_A5
+Text Label 3800 6350 2    50   ~ 0
+CPU_A6
+Text Label 3800 6450 2    50   ~ 0
+CPU_A7
+Text Label 3800 6550 2    50   ~ 0
+CPU_A8
+Text Label 3800 6650 2    50   ~ 0
+CPU_A9
+Text Label 3800 6750 2    50   ~ 0
+CPU_A10
+Text Label 3800 6850 2    50   ~ 0
+CPU_A11
+Text Label 3800 6950 2    50   ~ 0
+CPU_A12
+Text Label 3800 7050 2    50   ~ 0
+CPU_A13
+Text Label 3800 7150 2    50   ~ 0
+CPU_A14
+$Comp
+L chips2:AS6C6264 U4
+U 1 1 5C64B17E
+P 5900 5550
+F 0 "U4" H 5900 4600 50  0000 C CNN
+F 1 "AS6C6264" H 5900 4450 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 5900 5550 197 0001 C CNN
+F 3 "" H 5900 5550 197 0001 C CNN
+	1    5900 5550
+	1    0    0    -1  
+$EndComp
+Text Notes 5050 7950 0    79   ~ 0
+RAM\n8,192 * 8bit words\n65,536 total bits
+$Comp
+L power:VCC #PWR011
+U 1 1 5C64C71A
+P 5900 5900
+F 0 "#PWR011" H 5900 5750 50  0001 C CNN
+F 1 "VCC" H 5917 6073 50  0000 C CNN
+F 2 "" H 5900 5900 50  0001 C CNN
+F 3 "" H 5900 5900 50  0001 C CNN
+	1    5900 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5C64C7A5
+P 5900 7500
+F 0 "#PWR012" H 5900 7250 50  0001 C CNN
+F 1 "GND" H 5905 7327 50  0000 C CNN
+F 2 "" H 5900 7500 50  0001 C CNN
+F 3 "" H 5900 7500 50  0001 C CNN
+	1    5900 7500
+	1    0    0    -1  
+$EndComp
+Entry Bus Bus
+	6400 6650 6500 6550
+Entry Bus Bus
+	6400 6750 6500 6650
+Entry Bus Bus
+	6400 6850 6500 6750
+Entry Bus Bus
+	6400 6950 6500 6850
+Entry Bus Bus
+	6400 7050 6500 6950
+Entry Bus Bus
+	6400 7150 6500 7050
+Entry Bus Bus
+	6400 7250 6500 7150
+Entry Bus Bus
+	6400 7350 6500 7250
+Text Label 6400 6650 0    50   ~ 0
+D0
+Text Label 6400 6750 0    50   ~ 0
+D1
+Text Label 6400 6850 0    50   ~ 0
+D2
+Text Label 6400 6950 0    50   ~ 0
+D3
+Text Label 6400 7050 0    50   ~ 0
+D4
+Text Label 6400 7150 0    50   ~ 0
+D5
+Text Label 6400 7250 0    50   ~ 0
+D6
+Text Label 6400 7350 0    50   ~ 0
+D7
+Text Notes 3400 7850 0    79   ~ 0
+EEPROM\n32,768 * 8bit words\n262,144 total bits
+Text Notes 3150 9150 0    50   ~ 10
+MEMORY MAP:\n===========\n\n0x0000 -> 0x7FFF = EEPROM\n0000 0000 0000 0000b -> 0111 1111 1111 1111\n\n0x8000 -> 0x9FFF = RAM 1\n1000 0000 0000 0000b -> 1001 1111 1111 1111\n\n0xa000 -> 0xbfff = RAM 2\n1010 0000 0000 0000b -> 1011 1111 1111 1111
+Text Label 4600 4000 2    50   ~ 0
+CPU_WR
+Text Label 4600 4100 2    50   ~ 0
+CPU_MREQ
+Text Label 6400 6150 0    50   ~ 0
+CPU_MREQ
+Text Label 4650 6950 0    50   ~ 0
+CPU_MREQ
+Text Label 6400 6250 0    50   ~ 0
+CPU_A15
+Text Label 4650 6850 0    50   ~ 0
+CPU_A15
+Wire Wire Line
+	4650 6950 4550 6950
+Wire Wire Line
+	4550 6950 4550 6850
+Wire Wire Line
+	4550 6850 4500 6850
+Wire Wire Line
+	4650 6850 4550 6850
+Connection ~ 4550 6850
+Text Label 4500 6650 0    50   ~ 0
+CPU_WR
+Text Label 4500 6750 0    50   ~ 0
+CPU_RD
+Text Label 6400 6350 0    50   ~ 0
+CPU_WR
+Text Label 6400 6450 0    50   ~ 0
+CPU_RD
+Text Label 5400 6150 2    50   ~ 0
+CPU_A0
+Text Label 5400 6250 2    50   ~ 0
+CPU_A1
+Text Label 5400 6350 2    50   ~ 0
+CPU_A2
+Text Label 5400 6450 2    50   ~ 0
+CPU_A3
+Text Label 5400 6550 2    50   ~ 0
+CPU_A4
+Text Label 5400 6650 2    50   ~ 0
+CPU_A5
+Text Label 5400 6750 2    50   ~ 0
+CPU_A6
+Text Label 5400 6850 2    50   ~ 0
+CPU_A7
+Text Label 5400 6950 2    50   ~ 0
+CPU_A8
+Text Label 5400 7050 2    50   ~ 0
+CPU_A9
+Text Label 5400 7150 2    50   ~ 0
+CPU_A10
+Text Label 5400 7250 2    50   ~ 0
+CPU_A11
+Text Label 5400 7350 2    50   ~ 0
+CPU_A12
+$Comp
+L computer-rescue:Z80_PIO-chips U7
+U 1 1 5C65CFFD
+P 10300 3100
+F 0 "U7" H 10300 2928 50  0000 C CNN
+F 1 "Z80_PIO" H 10300 2837 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 10300 3100 50  0001 C CNN
+F 3 "" H 10300 3100 50  0001 C CNN
+	1    10300 3100
+	1    0    0    -1  
+$EndComp
+Text Label 9800 3700 0    50   ~ 0
+D0
+Text Label 9800 3800 0    50   ~ 0
+D1
+Text Label 9800 3900 0    50   ~ 0
+D2
+Text Label 9800 4000 0    50   ~ 0
+D3
+Text Label 9800 4100 0    50   ~ 0
+D4
+Text Label 9800 4200 0    50   ~ 0
+D5
+Text Label 9800 4300 0    50   ~ 0
+D6
+Text Label 9800 4400 0    50   ~ 0
+D7
+Text Label 9800 4600 2    50   ~ 0
+CPU_A4
+Text Label 9800 4700 2    50   ~ 0
+CPU_A5
+$Comp
+L computer-rescue:VCC-components #PWR017
+U 1 1 5C65D00D
+P 10300 3450
+F 0 "#PWR017" H 10300 3550 30  0001 C CNN
+F 1 "VCC" H 10303 3578 30  0000 C CNN
+F 2 "" H 10300 3450 50  0001 C CNN
+F 3 "" H 10300 3450 50  0001 C CNN
+	1    10300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L computer-rescue:GND-components #PWR018
+U 1 1 5C65D013
+P 10300 6200
+F 0 "#PWR018" H 10300 6200 30  0001 C CNN
+F 1 "GND" H 10300 6130 30  0001 C CNN
+F 2 "" H 10300 6200 50  0001 C CNN
+F 3 "" H 10300 6200 50  0001 C CNN
+	1    10300 6200
+	1    0    0    -1  
+$EndComp
+Text Label 9800 5100 2    50   ~ 0
+CPU_IORQ
+Text Label 9800 4900 2    50   ~ 0
+CPU_IORQ
+Text Label 9800 5000 2    50   ~ 0
+CPU_M1
+Text Label 9800 5200 2    50   ~ 0
+CPU_RD
+Text Label 9800 5600 2    50   ~ 0
 CPU_INT
 Entry Bus Bus
-	6800 5000 6900 4900
+	9700 3800 9800 3700
 Entry Bus Bus
-	6800 5100 6900 5000
+	9700 3900 9800 3800
 Entry Bus Bus
-	6800 5200 6900 5100
+	9700 4000 9800 3900
 Entry Bus Bus
-	6800 5300 6900 5200
+	9700 4100 9800 4000
 Entry Bus Bus
-	6800 5400 6900 5300
+	9700 4200 9800 4100
 Entry Bus Bus
-	6800 5500 6900 5400
+	9700 4300 9800 4200
 Entry Bus Bus
-	6800 5600 6900 5500
+	9700 4400 9800 4300
 Entry Bus Bus
-	6800 5700 6900 5600
-Wire Wire Line
-	5100 3450 5350 3450
-Wire Wire Line
-	5100 3550 5350 3550
-Wire Wire Line
-	5100 3650 5350 3650
-Wire Wire Line
-	5100 3750 5350 3750
-Wire Wire Line
-	5100 3850 5350 3850
-Wire Wire Line
-	5100 3950 5350 3950
-Wire Wire Line
-	5100 4050 5350 4050
+	9700 4500 9800 4400
 Wire Bus Line
-	5450 5000 6800 5000
+	9700 4950 7700 4950
+Wire Bus Line
+	6350 4950 6350 5100
 $Comp
-L 74xx:74LS00 U?
-U 1 1 5C643635
-P 1550 2050
-F 0 "U?" H 1550 2375 50  0000 C CNN
-F 1 "74LS00" H 1550 2284 50  0000 C CNN
-F 2 "" H 1550 2050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 1550 2050 50  0001 C CNN
-	1    1550 2050
+L power:VCC #PWR05
+U 1 1 5C661AB2
+P 4050 2950
+F 0 "#PWR05" H 4050 2800 50  0001 C CNN
+F 1 "VCC" H 4067 3123 50  0000 C CNN
+F 2 "" H 4050 2950 50  0001 C CNN
+F 3 "" H 4050 2950 50  0001 C CNN
+	1    4050 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5C643766
-P 1550 2500
-F 0 "R?" V 1343 2500 50  0000 C CNN
-F 1 "330" V 1434 2500 50  0000 C CNN
-F 2 "" V 1480 2500 50  0001 C CNN
-F 3 "~" H 1550 2500 50  0001 C CNN
-	1    1550 2500
+L Device:R R4
+U 1 1 5C661B34
+P 4050 3100
+F 0 "R4" H 4120 3146 50  0000 L CNN
+F 1 "1k" H 4120 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3980 3100 50  0001 C CNN
+F 3 "~" H 4050 3100 50  0001 C CNN
+	1    4050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5C661C0F
+P 4050 3500
+F 0 "C3" H 4165 3546 50  0000 L CNN
+F 1 "1u" H 4165 3455 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 4088 3350 50  0001 C CNN
+F 3 "~" H 4050 3500 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3250 4050 3300
+$Comp
+L Device:R R3
+U 1 1 5C663CCD
+P 3900 3300
+F 0 "R3" V 3693 3300 50  0000 C CNN
+F 1 "100" V 3784 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3830 3300 50  0001 C CNN
+F 3 "~" H 3900 3300 50  0001 C CNN
+	1    3900 3300
 	0    1    1    0   
 $EndComp
+Connection ~ 4050 3300
+Wire Wire Line
+	4050 3300 4050 3350
 $Comp
-L Device:C C?
-U 1 1 5C6437ED
-P 2100 2050
-F 0 "C?" V 1848 2050 50  0000 C CNN
-F 1 "100n" V 1939 2050 50  0000 C CNN
-F 2 "" H 2138 1900 50  0001 C CNN
-F 3 "~" H 2100 2050 50  0001 C CNN
-	1    2100 2050
-	0    1    1    0   
+L Switch:SW_Push SW1
+U 1 1 5C663DBA
+P 3750 3500
+F 0 "SW1" V 3800 3750 50  0000 R CNN
+F 1 "SW_Push" V 3700 3900 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3750 3700 50  0001 C CNN
+F 3 "" H 3750 3700 50  0001 C CNN
+	1    3750 3500
+	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3750 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3650
 $Comp
-L Device:Crystal Y?
-U 1 1 5C643923
-P 2000 2750
-F 0 "Y?" H 2000 3018 50  0000 C CNN
-F 1 "4MHz" H 2000 2927 50  0000 C CNN
-F 2 "" H 2000 2750 50  0001 C CNN
-F 3 "~" H 2000 2750 50  0001 C CNN
-	1    2000 2750
+L power:GND #PWR06
+U 1 1 5C664F79
+P 4050 3700
+F 0 "#PWR06" H 4050 3450 50  0001 C CNN
+F 1 "GND" H 4055 3527 50  0000 C CNN
+F 2 "" H 4050 3700 50  0001 C CNN
+F 3 "" H 4050 3700 50  0001 C CNN
+	1    4050 3700
 	1    0    0    -1  
 $EndComp
+Connection ~ 4050 3700
+Text Label 4600 2200 2    50   ~ 0
+RESET
 Wire Wire Line
-	1700 2500 1900 2500
+	4050 2500 4600 2500
 Wire Wire Line
-	1900 2500 1900 2050
-Wire Wire Line
-	1900 2050 1850 2050
-Wire Wire Line
-	1900 2050 1950 2050
-Connection ~ 1900 2050
-$Comp
-L Device:C C?
-U 1 1 5C643FB3
-P 1250 3100
-F 0 "C?" H 1365 3146 50  0000 L CNN
-F 1 "120p" H 1365 3055 50  0000 L CNN
-F 2 "" H 1288 2950 50  0001 C CNN
-F 3 "~" H 1250 3100 50  0001 C CNN
-	1    1250 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 2950 1250 2750
-Wire Wire Line
-	1400 2500 1250 2500
-Connection ~ 1250 2500
-Wire Wire Line
-	1250 2500 1250 2150
-Wire Wire Line
-	1850 2750 1250 2750
-Connection ~ 1250 2750
-Wire Wire Line
-	1250 2750 1250 2500
-$Comp
-L 74xx:74LS00 U?
-U 2 1 5C644AD7
-P 2600 1950
-F 0 "U?" H 2600 2275 50  0000 C CNN
-F 1 "74LS00" H 2600 2184 50  0000 C CNN
-F 2 "" H 2600 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2600 1950 50  0001 C CNN
-	2    2600 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 2050 2250 2050
-$Comp
-L Device:R R?
-U 1 1 5C644F1D
-P 2600 2500
-F 0 "R?" V 2393 2500 50  0000 C CNN
-F 1 "330" V 2484 2500 50  0000 C CNN
-F 2 "" V 2530 2500 50  0001 C CNN
-F 3 "~" H 2600 2500 50  0001 C CNN
-	1    2600 2500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2450 2500 2300 2500
-Wire Wire Line
-	2300 2500 2300 2050
-Connection ~ 2300 2050
-Wire Wire Line
-	2750 2500 2950 2500
-Wire Wire Line
-	2950 2500 2950 2050
-Wire Wire Line
-	2950 1950 2900 1950
-$Comp
-L 74xx:74LS00 U?
-U 3 1 5C6458FC
-P 3400 1950
-F 0 "U?" H 3400 2275 50  0000 C CNN
-F 1 "74LS00" H 3400 2184 50  0000 C CNN
-F 2 "" H 3400 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3400 1950 50  0001 C CNN
-	3    3400 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 2050 2950 2050
-Connection ~ 2950 2050
-Wire Wire Line
-	2950 2050 2950 1950
-Wire Wire Line
-	2150 2750 2950 2750
-Wire Wire Line
-	2950 2750 2950 2500
-Connection ~ 2950 2500
-Wire Wire Line
-	3100 1850 2950 1850
-Wire Wire Line
-	2950 1450 2300 1450
-Wire Wire Line
-	2300 1450 2300 1850
-Wire Wire Line
-	2300 1450 1250 1450
-Wire Wire Line
-	1250 1450 1250 1950
-Connection ~ 2300 1450
-Wire Wire Line
-	2950 1450 2950 1850
-$Comp
-L components:VCC #PWR?
-U 1 1 5C6480F6
-P 1250 1450
-F 0 "#PWR?" H 1250 1550 30  0001 C CNN
-F 1 "VCC" H 1253 1578 30  0000 C CNN
-F 2 "" H 1250 1450 50  0001 C CNN
-F 3 "" H 1250 1450 50  0001 C CNN
-	1    1250 1450
-	1    0    0    -1  
-$EndComp
-Connection ~ 1250 1450
-$Comp
-L components:GND #PWR?
-U 1 1 5C648178
-P 1250 3300
-F 0 "#PWR?" H 1250 3300 30  0001 C CNN
-F 1 "GND" H 1250 3230 30  0001 C CNN
-F 2 "" H 1250 3300 50  0001 C CNN
-F 3 "" H 1250 3300 50  0001 C CNN
-	1    1250 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U?
-U 5 1 5C6482CA
-P 2400 3250
-F 0 "U?" V 2033 3250 50  0000 C CNN
-F 1 "74LS00" V 2124 3250 50  0000 C CNN
-F 2 "" H 2400 3250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2400 3250 50  0001 C CNN
-	5    2400 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L components:VCC #PWR?
-U 1 1 5C6483E4
-P 2900 3250
-F 0 "#PWR?" H 2900 3350 30  0001 C CNN
-F 1 "VCC" H 2903 3378 30  0000 C CNN
-F 2 "" H 2900 3250 50  0001 C CNN
-F 3 "" H 2900 3250 50  0001 C CNN
-	1    2900 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L components:GND #PWR?
-U 1 1 5C648438
-P 1900 3300
-F 0 "#PWR?" H 1900 3300 30  0001 C CNN
-F 1 "GND" H 1900 3230 30  0001 C CNN
-F 2 "" H 1900 3300 50  0001 C CNN
-F 3 "" H 1900 3300 50  0001 C CNN
-	1    1900 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L chips:NM27C256Q150 U?
-U 1 1 5C64B58A
-P 4900 5050
-F 0 "U?" H 4875 5328 50  0000 C CNN
-F 1 "NM27C256Q150" H 4875 5237 50  0000 C CNN
-F 2 "" H 4800 5350 50  0001 C CNN
-F 3 "" H 4800 5350 50  0001 C CNN
-	1    4900 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L components:VCC #PWR?
-U 1 1 5C64D71D
-P 4900 4950
-F 0 "#PWR?" H 4900 5050 30  0001 C CNN
-F 1 "VCC" H 4903 5078 30  0000 C CNN
-F 2 "" H 4900 4950 50  0001 C CNN
-F 3 "" H 4900 4950 50  0001 C CNN
-	1    4900 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L components:GND #PWR?
-U 1 1 5C64D7A5
-P 4900 6950
-F 0 "#PWR?" H 4900 6950 30  0001 C CNN
-F 1 "GND" H 4900 6880 30  0001 C CNN
-F 2 "" H 4900 6950 50  0001 C CNN
-F 3 "" H 4900 6950 50  0001 C CNN
-	1    4900 6950
-	1    0    0    -1  
-$EndComp
-Text Label 4500 5250 2    50   ~ 0
-CPU_A0
-Text Label 4500 5350 2    50   ~ 0
-CPU_A1
-Text Label 4500 5450 2    50   ~ 0
-CPU_A2
-Text Label 4500 5550 2    50   ~ 0
-CPU_A3
-Text Label 4500 5650 2    50   ~ 0
-CPU_A4
-Text Label 4500 5750 2    50   ~ 0
-CPU_A5
-Text Label 4500 5850 2    50   ~ 0
-CPU_A6
-Text Label 4500 5950 2    50   ~ 0
-CPU_A7
-Text Label 4500 6050 2    50   ~ 0
-CPU_A8
-Text Label 4500 6150 2    50   ~ 0
-CPU_A9
-Text Label 4500 6250 2    50   ~ 0
-CPU_A10
-Text Label 4500 6350 2    50   ~ 0
-CPU_A11
-Text Label 4500 6450 2    50   ~ 0
-CPU_A12
-Text Label 4500 6550 2    50   ~ 0
-CPU_A13
-Text Label 4500 6650 2    50   ~ 0
-CPU_A14
-Text Label 5250 5150 0    50   ~ 0
-D0
-Text Label 5250 5250 0    50   ~ 0
-D1
-Text Label 5250 5350 0    50   ~ 0
-D2
-Text Label 5250 5450 0    50   ~ 0
-D3
-Text Label 5250 5550 0    50   ~ 0
-D4
-Text Label 5250 5650 0    50   ~ 0
-D5
-Text Label 5250 5750 0    50   ~ 0
+	4050 3300 4600 3300
+Entry Bus Bus
+	7700 5350 7800 5450
+Entry Bus Bus
+	7700 5450 7800 5550
+Entry Bus Bus
+	7700 5550 7800 5650
+Entry Bus Bus
+	7700 5650 7800 5750
+Entry Bus Bus
+	7700 5750 7800 5850
+Entry Bus Bus
+	7700 5850 7800 5950
+Entry Bus Bus
+	7700 5950 7800 6050
+Entry Bus Bus
+	7700 6050 7800 6150
+Connection ~ 7700 4950
+Wire Bus Line
+	7700 4950 6650 4950
+Text Label 6550 4600 2    50   ~ 0
+D7
+Text Label 6550 4500 2    50   ~ 0
 D6
-Text Label 5250 5850 0    50   ~ 0
+Text Label 6550 4400 2    50   ~ 0
+D5
+Text Label 6550 4300 2    50   ~ 0
+D4
+Text Label 6550 4200 2    50   ~ 0
+D3
+Text Label 6550 4100 2    50   ~ 0
+D2
+Text Label 6550 4000 2    50   ~ 0
+D1
+Text Label 6550 3900 2    50   ~ 0
+D0
+Entry Bus Bus
+	6550 4600 6650 4500
+Entry Bus Bus
+	6550 4500 6650 4400
+Entry Bus Bus
+	6550 4400 6650 4300
+Entry Bus Bus
+	6550 4300 6650 4200
+Entry Bus Bus
+	6550 4200 6650 4100
+Entry Bus Bus
+	6550 4100 6650 4000
+Entry Bus Bus
+	6550 4000 6650 3900
+Entry Bus Bus
+	6550 3900 6650 3800
+Wire Wire Line
+	6000 3900 6550 3900
+Wire Wire Line
+	6000 4000 6550 4000
+Wire Wire Line
+	6000 4100 6550 4100
+Wire Wire Line
+	6000 4200 6550 4200
+Wire Wire Line
+	6000 4300 6550 4300
+Wire Wire Line
+	6000 4400 6550 4400
+Wire Wire Line
+	6000 4500 6550 4500
+Wire Wire Line
+	6000 4600 6550 4600
+Wire Bus Line
+	6650 3100 7700 3100
+Connection ~ 6650 4950
+Wire Bus Line
+	6650 4950 6350 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5C69C51E
+P 11850 4900
+F 0 "#PWR?" H 11850 4650 50  0001 C CNN
+F 1 "GND" H 11855 4727 50  0000 C CNN
+F 2 "" H 11850 4900 50  0001 C CNN
+F 3 "" H 11850 4900 50  0001 C CNN
+	1    11850 4900
+	1    0    0    -1  
+$EndComp
+Entry Bus Bus
+	10800 4900 10900 4800
+Entry Bus Bus
+	10800 5000 10900 4900
+Entry Bus Bus
+	10800 5100 10900 5000
+Entry Bus Bus
+	10800 5200 10900 5100
+Entry Bus Bus
+	10800 5300 10900 5200
+Entry Bus Bus
+	10800 5400 10900 5300
+Entry Bus Bus
+	10800 5500 10900 5400
+Entry Bus Bus
+	10800 5600 10900 5500
+Entry Bus Bus
+	11350 4100 11450 4000
+Entry Bus Bus
+	11350 4200 11450 4100
+Entry Bus Bus
+	11350 4300 11450 4200
+Entry Bus Bus
+	11350 4400 11450 4300
+Entry Bus Bus
+	11350 4500 11450 4400
+Entry Bus Bus
+	11350 4600 11450 4500
+Entry Bus Bus
+	11350 4700 11450 4600
+Entry Bus Bus
+	11350 4800 11450 4700
+Wire Bus Line
+	10900 4800 11350 4800
+Entry Bus Bus
+	10800 3700 10900 3600
+Entry Bus Bus
+	10800 3800 10900 3700
+Entry Bus Bus
+	10800 3900 10900 3800
+Entry Bus Bus
+	11350 3600 11450 3500
+Entry Bus Bus
+	11350 3700 11450 3600
+Entry Bus Bus
+	11350 3800 11450 3700
+Text Label 10800 4900 0    50   ~ 0
+LCD_DB0
+Text Label 10800 5000 0    50   ~ 0
+LCD_DB1
+Text Label 10800 5100 0    50   ~ 0
+LCD_DB2
+Text Label 10800 5200 0    50   ~ 0
+LCD_DB3
+Text Label 10800 5300 0    50   ~ 0
+LCD_DB4
+Text Label 10800 5400 0    50   ~ 0
+LCD_DB5
+Text Label 10800 5500 0    50   ~ 0
+LCD_DB6
+Text Label 10800 5600 0    50   ~ 0
+LCD_DB7
+Text Label 10800 3900 0    50   ~ 0
+LCD_E
+Text Label 10800 3800 0    50   ~ 0
+LCD_RW
+Text Label 10800 3700 0    50   ~ 0
+LCD_RS
+Text Label 11450 3700 2    50   ~ 0
+LCD_E
+Text Label 11450 3600 2    50   ~ 0
+LCD_RW
+Text Label 11450 3500 2    50   ~ 0
+LCD_RS
+$Comp
+L Display_Character:NHD-0420H1Z U?
+U 1 1 5C6ADF2D
+P 11850 4100
+F 0 "U?" V 11850 3800 50  0000 C CNN
+F 1 "NHD-0420H1Z" V 11850 4200 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 11850 3200 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 11950 4000 50  0001 C CNN
+	1    11850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6AFE9A
+P 12250 4400
+F 0 "#PWR?" H 12250 4250 50  0001 C CNN
+F 1 "VCC" V 12267 4528 50  0000 L CNN
+F 2 "" H 12250 4400 50  0001 C CNN
+F 3 "" H 12250 4400 50  0001 C CNN
+	1    12250 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6AFF4B
+P 12350 4300
+F 0 "#PWR?" H 12350 4050 50  0001 C CNN
+F 1 "GND" V 12355 4172 50  0000 R CNN
+F 2 "" H 12350 4300 50  0001 C CNN
+F 3 "" H 12350 4300 50  0001 C CNN
+	1    12350 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5C6B18E3
+P 12100 3100
+F 0 "RV?" H 12030 3054 50  0000 R CNN
+F 1 "10k-20k" H 12030 3145 50  0000 R CNN
+F 2 "" H 12100 3100 50  0001 C CNN
+F 3 "~" H 12100 3100 50  0001 C CNN
+	1    12100 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11950 3100 11950 3300
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6B4BFB
+P 11850 2850
+F 0 "#PWR?" H 11850 2700 50  0001 C CNN
+F 1 "VCC" H 11867 3023 50  0000 C CNN
+F 2 "" H 11850 2850 50  0001 C CNN
+F 3 "" H 11850 2850 50  0001 C CNN
+	1    11850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 2850 11850 2900
+Wire Wire Line
+	11850 2900 12100 2900
+Wire Wire Line
+	12100 2900 12100 2950
+Connection ~ 11850 2900
+Wire Wire Line
+	11850 2900 11850 3300
+Wire Bus Line
+	10900 3600 11350 3600
+Wire Wire Line
+	12350 4300 12300 4300
+Wire Wire Line
+	12100 3250 12100 3300
+Wire Wire Line
+	12100 3300 12300 3300
+Wire Wire Line
+	12300 3300 12300 4300
+Connection ~ 12300 4300
+Wire Wire Line
+	12300 4300 12250 4300
+Text Notes 11200 3250 2    157  ~ 0
+LCD 1
+$Comp
+L chips2:AS6C6264 U?
+U 1 1 5C6C621F
+P 6350 7900
+F 0 "U?" H 6350 6950 50  0000 C CNN
+F 1 "AS6C6264" H 6350 6800 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6350 7900 197 0001 C CNN
+F 3 "" H 6350 7900 197 0001 C CNN
+	1    6350 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6C6588
+P 5950 8350
+F 0 "#PWR?" H 5950 8200 50  0001 C CNN
+F 1 "VCC" H 5967 8523 50  0000 C CNN
+F 2 "" H 5950 8350 50  0001 C CNN
+F 3 "" H 5950 8350 50  0001 C CNN
+	1    5950 8350
+	1    0    0    -1  
+$EndComp
+Text Label 5850 8500 2    50   ~ 0
+CPU_A0
+Text Label 5850 8600 2    50   ~ 0
+CPU_A1
+Text Label 5850 8700 2    50   ~ 0
+CPU_A2
+Text Label 5850 8800 2    50   ~ 0
+CPU_A3
+Text Label 5850 8900 2    50   ~ 0
+CPU_A4
+Text Label 5850 9000 2    50   ~ 0
+CPU_A5
+Text Label 5850 9100 2    50   ~ 0
+CPU_A6
+Text Label 5850 9200 2    50   ~ 0
+CPU_A7
+Text Label 5850 9300 2    50   ~ 0
+CPU_A8
+Text Label 5850 9400 2    50   ~ 0
+CPU_A9
+Text Label 5850 9500 2    50   ~ 0
+CPU_A10
+Text Label 5850 9600 2    50   ~ 0
+CPU_A11
+Text Label 5850 9700 2    50   ~ 0
+CPU_A12
+Text Label 6850 8500 0    50   ~ 0
+CPU_MREQ
+Wire Wire Line
+	7250 8600 6850 8600
+Text Label 7850 8500 0    50   ~ 0
+CPU_A15
+Text Label 7850 8600 0    50   ~ 0
+CPU_A13
+$Comp
+L 74xGxx:74AUC2G04 U?
+U 1 1 5C6CBF22
+P 8100 8700
+F 0 "U?" H 8200 8800 50  0000 C CNN
+F 1 "74AUC2G04" H 8200 8900 50  0000 C CNN
+F 2 "" H 8100 8700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8100 8700 50  0001 C CNN
+	1    8100 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS15 U?
+U 1 1 5C6CDDF5
+P 7550 8600
+F 0 "U?" H 7550 8283 50  0000 C CNN
+F 1 "74LS15" H 7550 8374 50  0000 C CNN
+F 2 "" H 7550 8600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS15" H 7550 8600 50  0001 C CNN
+	1    7550 8600
+	-1   0    0    1   
+$EndComp
+Text Label 8400 8700 0    50   ~ 0
+CPU_A14
+Text Label 6850 8700 0    50   ~ 0
+CPU_WR
+Text Label 6850 8800 0    50   ~ 0
+CPU_RD
+Text Label 6850 9000 0    50   ~ 0
+D0
+Text Label 6850 9100 0    50   ~ 0
+D1
+Text Label 6850 9200 0    50   ~ 0
+D2
+Text Label 6850 9300 0    50   ~ 0
+D3
+Text Label 6850 9400 0    50   ~ 0
+D4
+Text Label 6850 9500 0    50   ~ 0
+D5
+Text Label 6850 9600 0    50   ~ 0
+D6
+Text Label 6850 9700 0    50   ~ 0
 D7
 Entry Bus Bus
-	5350 5150 5450 5050
+	6850 9000 6950 8900
 Entry Bus Bus
-	5350 5250 5450 5150
+	6850 9100 6950 9000
 Entry Bus Bus
-	5350 5350 5450 5250
+	6850 9200 6950 9100
 Entry Bus Bus
-	5350 5450 5450 5350
+	6850 9300 6950 9200
 Entry Bus Bus
-	5350 5550 5450 5450
+	6850 9400 6950 9300
 Entry Bus Bus
-	5350 5650 5450 5550
+	6850 9500 6950 9400
 Entry Bus Bus
-	5350 5750 5450 5650
+	6850 9600 6950 9500
 Entry Bus Bus
-	5350 5850 5450 5750
-Wire Wire Line
-	5350 5150 5250 5150
-Wire Wire Line
-	5350 5250 5250 5250
-Wire Wire Line
-	5350 5350 5250 5350
-Wire Wire Line
-	5350 5450 5250 5450
-Wire Wire Line
-	5350 5550 5250 5550
-Wire Wire Line
-	5350 5650 5250 5650
-Wire Wire Line
-	5350 5750 5250 5750
-Wire Wire Line
-	5350 5850 5250 5850
+	6850 9700 6950 9600
 Wire Bus Line
-	6800 1850 6800 2550
+	6950 8900 7250 8900
 Wire Bus Line
-	6800 5000 6800 5700
+	7250 8900 7250 7600
 Wire Bus Line
-	5450 2550 5450 5000
+	7250 7600 6500 7600
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6D2B7D
+P 6350 8250
+F 0 "#PWR?" H 6350 8100 50  0001 C CNN
+F 1 "VCC" H 6367 8423 50  0000 C CNN
+F 2 "" H 6350 8250 50  0001 C CNN
+F 3 "" H 6350 8250 50  0001 C CNN
+	1    6350 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6D2C26
+P 6350 9850
+F 0 "#PWR?" H 6350 9600 50  0001 C CNN
+F 1 "GND" H 6355 9677 50  0000 C CNN
+F 2 "" H 6350 9850 50  0001 C CNN
+F 3 "" H 6350 9850 50  0001 C CNN
+	1    6350 9850
+	1    0    0    -1  
+$EndComp
+Text Notes 6550 10200 0    79   ~ 0
+RAM\n8,192 * 8bit words\n65,536 total bits
+$Comp
+L 74xx:74LS15 U?
+U 4 1 5C6D42CC
+P 1150 5100
+F 0 "U?" H 1380 5146 50  0000 L CNN
+F 1 "74LS15" H 1380 5055 50  0000 L CNN
+F 2 "" H 1150 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS15" H 1150 5100 50  0001 C CNN
+	4    1150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6D4470
+P 1150 4600
+F 0 "#PWR?" H 1150 4450 50  0001 C CNN
+F 1 "VCC" H 1167 4773 50  0000 C CNN
+F 2 "" H 1150 4600 50  0001 C CNN
+F 3 "" H 1150 4600 50  0001 C CNN
+	1    1150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6D451C
+P 1150 5600
+F 0 "#PWR?" H 1150 5350 50  0001 C CNN
+F 1 "GND" H 1155 5427 50  0000 C CNN
+F 2 "" H 1150 5600 50  0001 C CNN
+F 3 "" H 1150 5600 50  0001 C CNN
+	1    1150 5600
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
-	5450 5000 5450 5750
-Connection ~ 5450 5000
+	10900 3600 10900 3800
+Wire Bus Line
+	11350 3600 11350 3800
+Wire Bus Line
+	7700 2400 7700 3100
+Wire Bus Line
+	10900 4800 10900 5500
+Wire Bus Line
+	11350 4100 11350 4800
+Wire Bus Line
+	6950 8900 6950 9600
+Wire Bus Line
+	7700 4950 7700 6050
+Wire Bus Line
+	4600 5100 4600 6350
+Wire Bus Line
+	6500 5550 6500 7600
+Wire Bus Line
+	9700 3800 9700 4950
+Wire Bus Line
+	6650 3100 6650 4950
+$Comp
+L power:VCC #PWR?
+U 1 1 5C6DB9F6
+P 2100 4600
+F 0 "#PWR?" H 2100 4450 50  0001 C CNN
+F 1 "VCC" H 2117 4773 50  0000 C CNN
+F 2 "" H 2100 4600 50  0001 C CNN
+F 3 "" H 2100 4600 50  0001 C CNN
+	1    2100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6DBBCF
+P 2100 5600
+F 0 "#PWR?" H 2100 5350 50  0001 C CNN
+F 1 "GND" H 2105 5427 50  0000 C CNN
+F 2 "" H 2100 5600 50  0001 C CNN
+F 3 "" H 2100 5600 50  0001 C CNN
+	1    2100 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

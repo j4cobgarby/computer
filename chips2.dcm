@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AS6C6264
+D 8192 * 8-bit words = 65536 bits
+K RAM,memory
+$ENDCMP
+#
+#End Doc Library

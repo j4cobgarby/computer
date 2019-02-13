@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name chips)(type Legacy)(uri /home/j4cobgarby/elec/computer/chips.lib)(options "")(descr ""))
+  (lib (name computer-rescue)(type Legacy)(uri ${KIPRJMOD}/computer-rescue.lib)(options "")(descr ""))
 )
